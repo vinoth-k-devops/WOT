@@ -1,0 +1,4 @@
+﻿
+sudo Scaffold-Dbcontext "Server=localhost,1433\\MSSQLSERVER;Database=WOT_CORE;User ID=sa;Password=Vinoth@123;Trusted_Connection=True;MultipleActiveResultSets=true" Microsoft.EntityFrameworkCore.SqlServer --output-dir ../WOT_Entities/CORE/Entity -Tables dbo.WOT_Connection,dbo.dbUSERS -f -NonConfiguring
+
+sudo dotnet ef dbcontext Scaffold "Server=localhost,1433\MSSQLSERVER;Initial Catalog=WOT_CORE;Persist Security Info=False;User ID=sa;Password=Vinoth@123;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=true;Connection Timeout=30;" Microsoft.EntityFrameworkCore.SqlServer -o ../WOT_Entities/CORE/Entity -Tables dbo.WOT_Connection,dbo.dbUSERS

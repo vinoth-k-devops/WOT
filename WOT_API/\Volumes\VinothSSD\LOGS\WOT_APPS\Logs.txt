@@ -1,0 +1,177 @@
+2023-12-20 15:15:49.471 +05:30 [INF] Executed DbCommand (43ms) [Parameters=[@___GetDynamicConnectionString_0='?' (Size = 8000) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT [w].[connID] AS [ContextName], REPLACE(REPLACE(REPLACE(REPLACE(@___GetDynamicConnectionString_0, '{0}', [w].[serverName]), '{1}', [w].[dbName]), '{2}', [w].[userId]), '{3}', [w].[passcode]) AS [ConnectString]
+FROM [WOT_Connection] AS [w]
+WHERE [w].[active] = CAST(1 AS bit)
+2023-12-20 15:15:49.609 +05:30 [INF] User profile is available. Using '/Users/apple/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-12-20 15:15:50.021 +05:30 [INF] Now listening on: https://localhost:7064
+2023-12-20 15:15:50.023 +05:30 [INF] Now listening on: http://localhost:5060
+2023-12-20 15:15:50.029 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-20 15:15:50.032 +05:30 [INF] Hosting environment: Development
+2023-12-20 15:15:50.034 +05:30 [INF] Content root path: /Volumes/VinothSSD/WOT_BackEnd/WOT/WOT_API
+2023-12-20 15:15:51.364 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7064/swagger/index.html - -
+2023-12-20 15:15:51.545 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 185.3572ms
+2023-12-20 15:15:51.649 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7064/swagger/v1/swagger.json - -
+2023-12-20 15:15:51.746 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7064/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 97.5344ms
+2023-12-20 15:33:35.337 +05:30 [INF] Executed DbCommand (48ms) [Parameters=[@___GetDynamicConnectionString_0='?' (Size = 8000) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT [w].[connID] AS [ContextName], REPLACE(REPLACE(REPLACE(REPLACE(@___GetDynamicConnectionString_0, '{0}', [w].[serverName]), '{1}', [w].[dbName]), '{2}', [w].[userId]), '{3}', [w].[passcode]) AS [ConnectString]
+FROM [WOT_Connection] AS [w]
+WHERE [w].[active] = CAST(1 AS bit)
+2023-12-20 15:33:35.490 +05:30 [INF] User profile is available. Using '/Users/apple/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-12-20 15:33:35.925 +05:30 [INF] Now listening on: https://localhost:7064
+2023-12-20 15:33:35.927 +05:30 [INF] Now listening on: http://localhost:5060
+2023-12-20 15:33:35.934 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-20 15:33:35.937 +05:30 [INF] Hosting environment: Development
+2023-12-20 15:33:35.939 +05:30 [INF] Content root path: /Volumes/VinothSSD/WOT_BackEnd/WOT/WOT_API
+2023-12-20 15:33:37.620 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7064/swagger/index.html - -
+2023-12-20 15:33:37.775 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 158.3864ms
+2023-12-20 15:33:37.877 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7064/swagger/v1/swagger.json - -
+2023-12-20 15:33:37.976 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7064/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 99.7849ms
+2023-12-20 15:33:46.522 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7064/api/Account - -
+2023-12-20 15:33:46.606 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-12-20 15:33:46.610 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2023-12-20 15:33:46.611 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7064/api/Account - - - 401 0 - 88.3992ms
+2023-12-20 15:34:22.183 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7064/api/Account/Login application/json 48
+2023-12-20 15:34:22.201 +05:30 [INF] Executing endpoint 'WOT_API.Controllers.AccountController.Login (WOT_API)'
+2023-12-20 15:34:22.227 +05:30 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(WOT_Models.Login) on controller WOT_API.Controllers.AccountController (WOT_API).
+2023-12-20 15:34:22.430 +05:30 [INF] Executing OkObjectResult, writing value of type 'WOT_Models.TokenResponse'.
+2023-12-20 15:34:22.439 +05:30 [INF] Executed action WOT_API.Controllers.AccountController.Login (WOT_API) in 207.7108ms
+2023-12-20 15:34:22.439 +05:30 [INF] Executed endpoint 'WOT_API.Controllers.AccountController.Login (WOT_API)'
+2023-12-20 15:34:22.439 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7064/api/Account/Login application/json 48 - 200 - application/json;+charset=utf-8 256.7025ms
+2023-12-20 15:35:09.167 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7064/api/Account/Encryption/Vinoth - -
+2023-12-20 15:35:09.179 +05:30 [INF] Bearer was not authenticated. Failure message: No SecurityTokenValidator available for token.
+2023-12-20 15:35:09.181 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-12-20 15:35:09.186 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2023-12-20 15:35:09.186 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7064/api/Account/Encryption/Vinoth - - - 401 0 - 18.8306ms
+2023-12-20 15:36:02.759 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7064/api/Account/Encryption/Vinoth - -
+2023-12-20 15:36:02.801 +05:30 [INF] Executing endpoint 'WOT_API.Controllers.AccountController.Encryption (WOT_API)'
+2023-12-20 15:36:02.806 +05:30 [INF] Route matched with {action = "Encryption", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.String] Encryption(System.String) on controller WOT_API.Controllers.AccountController (WOT_API).
+2023-12-20 15:36:02.811 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-12-20 15:36:02.812 +05:30 [INF] Executed action WOT_API.Controllers.AccountController.Encryption (WOT_API) in 5.8681ms
+2023-12-20 15:36:02.812 +05:30 [INF] Executed endpoint 'WOT_API.Controllers.AccountController.Encryption (WOT_API)'
+2023-12-20 15:36:02.812 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7064/api/Account/Encryption/Vinoth - - - 200 - text/plain;+charset=utf-8 52.9055ms
+2023-12-20 15:36:17.705 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7064/api/Account - -
+2023-12-20 15:36:17.707 +05:30 [INF] Executing endpoint 'WOT_API.Controllers.AccountController.GETDBID (WOT_API)'
+2023-12-20 15:36:17.710 +05:30 [INF] Route matched with {action = "GETDBID", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.String] GETDBID() on controller WOT_API.Controllers.AccountController (WOT_API).
+2023-12-20 15:36:17.712 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-12-20 15:36:17.712 +05:30 [INF] Executed action WOT_API.Controllers.AccountController.GETDBID (WOT_API) in 1.3854ms
+2023-12-20 15:36:17.712 +05:30 [INF] Executed endpoint 'WOT_API.Controllers.AccountController.GETDBID (WOT_API)'
+2023-12-20 15:36:17.712 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7064/api/Account - - - 200 0 text/plain;+charset=utf-8 6.5689ms
+2023-12-20 15:37:38.992 +05:30 [INF] Executed DbCommand (47ms) [Parameters=[@___GetDynamicConnectionString_0='?' (Size = 8000) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT [w].[connID] AS [ContextName], REPLACE(REPLACE(REPLACE(REPLACE(@___GetDynamicConnectionString_0, '{0}', [w].[serverName]), '{1}', [w].[dbName]), '{2}', [w].[userId]), '{3}', [w].[passcode]) AS [ConnectString]
+FROM [WOT_Connection] AS [w]
+WHERE [w].[active] = CAST(1 AS bit)
+2023-12-20 15:37:39.163 +05:30 [INF] User profile is available. Using '/Users/apple/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-12-20 15:37:39.678 +05:30 [INF] Now listening on: https://localhost:7064
+2023-12-20 15:37:39.680 +05:30 [INF] Now listening on: http://localhost:5060
+2023-12-20 15:37:39.687 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-20 15:37:39.690 +05:30 [INF] Hosting environment: Development
+2023-12-20 15:37:39.693 +05:30 [INF] Content root path: /Volumes/VinothSSD/WOT_BackEnd/WOT/WOT_API
+2023-12-20 15:37:40.767 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7064/swagger/index.html - -
+2023-12-20 15:37:40.954 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 189.8763ms
+2023-12-20 15:37:41.058 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7064/swagger/v1/swagger.json - -
+2023-12-20 15:37:41.158 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7064/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 99.2978ms
+2023-12-20 15:38:17.298 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7064/api/Account - -
+2023-12-20 15:38:17.524 +05:30 [INF] Executing endpoint 'WOT_API.Controllers.AccountController.GETDBID (WOT_API)'
+2023-12-20 15:38:17.540 +05:30 [INF] Route matched with {action = "GETDBID", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.String] GETDBID() on controller WOT_API.Controllers.AccountController (WOT_API).
+2023-12-20 15:38:17.554 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-12-20 15:38:17.562 +05:30 [INF] Executed action WOT_API.Controllers.AccountController.GETDBID (WOT_API) in 14.1981ms
+2023-12-20 15:38:17.563 +05:30 [INF] Executed endpoint 'WOT_API.Controllers.AccountController.GETDBID (WOT_API)'
+2023-12-20 15:38:17.563 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7064/api/Account - - - 200 - text/plain;+charset=utf-8 265.0257ms
+2024-03-04 15:16:26.306 +05:30 [ERR] An error occurred using the connection to database 'WOT_CORE' on server 'localhost,1433\MSSQLSERVER'.
+2024-03-04 15:16:26.330 +05:30 [ERR] An exception occurred while iterating over the results of a query for context type 'WOT_API.WOTCOREContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 40 - Could not open a connection to SQL Server: Could not open a connection to SQL Server)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnectionString connectionOptions, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 40 - Could not open a connection to SQL Server: Could not open a connection to SQL Server)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnectionString connectionOptions, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+2024-03-04 15:16:49.781 +05:30 [INF] Executed DbCommand (77ms) [Parameters=[@___GetDynamicConnectionString_0='?' (Size = 8000) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT [w].[connID] AS [ContextName], REPLACE(REPLACE(REPLACE(REPLACE(@___GetDynamicConnectionString_0, '{0}', [w].[serverName]), '{1}', [w].[dbName]), '{2}', [w].[userId]), '{3}', [w].[passcode]) AS [ConnectString]
+FROM [WOT_Connection] AS [w]
+WHERE [w].[active] = CAST(1 AS bit)
+2024-03-04 15:16:49.976 +05:30 [INF] User profile is available. Using '/Users/apple/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-03-04 15:16:50.006 +05:30 [INF] Creating key {e2e7b931-8b53-4038-927a-fc9ef35296fc} with creation date 2024-03-04 09:46:50Z, activation date 2024-03-04 09:46:49Z, and expiration date 2024-06-02 09:46:49Z.
+2024-03-04 15:16:50.016 +05:30 [WRN] No XML encryptor configured. Key {e2e7b931-8b53-4038-927a-fc9ef35296fc} may be persisted to storage in unencrypted form.
+2024-03-04 15:16:50.017 +05:30 [INF] Writing data to file '/Users/apple/.aspnet/DataProtection-Keys/key-e2e7b931-8b53-4038-927a-fc9ef35296fc.xml'.
+2024-03-04 15:16:50.418 +05:30 [INF] Now listening on: https://localhost:7064
+2024-03-04 15:16:50.421 +05:30 [INF] Now listening on: http://localhost:5060
+2024-03-04 15:16:50.427 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-04 15:16:50.430 +05:30 [INF] Hosting environment: Development
+2024-03-04 15:16:50.432 +05:30 [INF] Content root path: /Volumes/VinothSSD/WOT_BackEnd/WOT/WOT_API
+2024-03-04 15:16:59.046 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7064/swagger/index.html - -
+2024-03-04 15:16:59.385 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 344.2961ms
+2024-03-04 15:16:59.416 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7064/swagger/swagger-ui-bundle.js - -
+2024-03-04 15:16:59.420 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7064/swagger/swagger-ui.css - -
+2024-03-04 15:16:59.435 +05:30 [INF] The file /swagger-ui.css was not modified
+2024-03-04 15:16:59.435 +05:30 [INF] The file /swagger-ui-bundle.js was not modified
+2024-03-04 15:16:59.438 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7064/swagger/swagger-ui-bundle.js - - - 304 - text/javascript 22.2781ms
+2024-03-04 15:16:59.438 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7064/swagger/swagger-ui.css - - - 304 - text/css 18.3059ms
+2024-03-04 15:16:59.466 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7064/swagger/swagger-ui-standalone-preset.js - -
+2024-03-04 15:16:59.466 +05:30 [INF] The file /swagger-ui-standalone-preset.js was not modified
+2024-03-04 15:16:59.467 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7064/swagger/swagger-ui-standalone-preset.js - - - 304 - text/javascript 0.9722ms
+2024-03-04 15:16:59.635 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7064/swagger/v1/swagger.json - -
+2024-03-04 15:16:59.650 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7064/swagger/favicon-32x32.png - -
+2024-03-04 15:16:59.650 +05:30 [INF] The file /favicon-32x32.png was not modified
+2024-03-04 15:16:59.651 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7064/swagger/favicon-32x32.png - - - 304 - image/png 0.5105ms
+2024-03-04 15:16:59.758 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7064/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 122.8878ms
+2024-03-04 15:17:49.637 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7064/api/Account/Login application/json 48
+2024-03-04 15:17:49.787 +05:30 [INF] Executing endpoint 'WOT_API.Controllers.AccountController.Login (WOT_API)'
+2024-03-04 15:17:49.812 +05:30 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(WOT_Models.Login) on controller WOT_API.Controllers.AccountController (WOT_API).
+2024-03-04 15:17:50.011 +05:30 [INF] Executing OkObjectResult, writing value of type 'WOT_Models.TokenResponse'.
+2024-03-04 15:17:50.020 +05:30 [INF] Executed action WOT_API.Controllers.AccountController.Login (WOT_API) in 203.776ms
+2024-03-04 15:17:50.020 +05:30 [INF] Executed endpoint 'WOT_API.Controllers.AccountController.Login (WOT_API)'
+2024-03-04 15:17:50.020 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7064/api/Account/Login application/json 48 - 200 - application/json;+charset=utf-8 383.8353ms
